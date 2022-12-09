@@ -5,7 +5,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MenuSubcategory from "./MenuSubcategory";
 
-export default function MenuCategory({ category }) {
+export default function MenuCategory({ category, products, setProducts }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [subcategories, setSubcategories] = useState([]);
   const [error, setError] = useState(false);
@@ -21,7 +21,6 @@ export default function MenuCategory({ category }) {
   };
 
   useEffect(() => {
-    
     fetch(
       `http://localhost:8080/stedisa/rest/categories/${category.id}/subcategories`
     )
@@ -30,7 +29,6 @@ export default function MenuCategory({ category }) {
         (result) => {
           setIsLoaded(true);
           setSubcategories(result);
-          console.log(result);
         },
         (error) => {
           console.log(error);
@@ -45,14 +43,16 @@ export default function MenuCategory({ category }) {
     return <div> Loading... </div>;
   } else {
     return (
-      <div onMouseOver={(event)=>{handleClick(event)}} onMouseLeave={()=>{handleClose()}}>
+      <div onClick={handleClick} onMouseLeave={handleClose} style={{backgroundColor:"red", display:"flex",flex: 1 , flexDirection:"column", justifyContent:"center"}}>
+        <img style={{height:50,padding:10, display:"flex", justifyContent:"center"}} src={require("../images/categories/"+category.id+".svg")} alt="alt"/>
         <Button
           id="basic-button"
           aria-controls={open ? "basic-menu" : undefined}
           aria-haspopup="true"
           aria-expanded={open ? "true" : undefined}
+          
           variant="text"
-          style={{ color: "white" }}
+          style={{ color: "black", textTransform:"capitalize", fontSize:14 }}
         >
           {category.name}
         </Button>
@@ -68,8 +68,11 @@ export default function MenuCategory({ category }) {
           {subcategories.map((subcategory) => {
             return (
               <MenuSubcategory
+                key={subcategory.id}
                 subcategory={subcategory}
                 handleClose={handleClose}
+                products={products}
+                setProducts={setProducts}
               ></MenuSubcategory>
             );
           })}

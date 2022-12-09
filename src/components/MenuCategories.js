@@ -4,7 +4,7 @@ import MenuCategory from "./MenuCategory";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 
-export default function MenuCategories() {
+export default function MenuCategories({ products, setProducts }) {
   const [error, setError] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   const [categories, setCategories] = useState([]);
@@ -16,7 +16,6 @@ export default function MenuCategories() {
         (result) => {
           setIsLoaded(true);
           setCategories(result);
-          console.log(result);
         },
         (error) => {
           setIsLoaded(true);
@@ -31,10 +30,15 @@ export default function MenuCategories() {
     return <div> Loading... </div>;
   } else {
     return (
-      <Stack  direction="row" spacing={0.2}>
+      <Stack direction="row" spacing={0.2}>
         {categories.map((category) => {
           return (
-            <MenuCategory key={category.id} category={category}></MenuCategory>
+            <MenuCategory
+              key={category.id}
+              category={category}
+              products={products}
+              setProducts={setProducts}
+            ></MenuCategory>
           );
         })}
       </Stack>
