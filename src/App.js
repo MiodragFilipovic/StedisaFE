@@ -18,8 +18,8 @@ function App() {
   const [products, setProducts] = useState([]);
 
   return (
-    <Box sx={{ flexGrow: 1 }} style={{backgroundColor: "grey"}}>
-      <AppBar position="static" style={{backgroundColor: "white"}}>
+    <Box sx={{ flexGrow: 1 }} style={{backgroundColor: "white"}}>
+      <AppBar position="static" style={{backgroundColor: "#191D32"}}>
         <Toolbar>
           <MenuCategories
             products={products}
@@ -27,26 +27,28 @@ function App() {
           ></MenuCategories>
         </Toolbar>
       </AppBar>
-      <Box style={{display:"flex" , flexWrap: "wrap"}}>
+      
+      <Box style={{display:"flex" , flexDirection:"row", justifyContent:"center", flexWrap: "wrap"}}>
       {products.map((product) => {
         return (
-          <Card key={product.id} sx={{ maxWidth: 345 }} style={{margin:15}}>
+          <Card key={product.id} sx={{  width:"20%" }} style={{margin:15, display:"flex", justifyContent:"center",flexDirection:"column", border:0}}>
             <CardMedia
               component="img"
-              height="70"
+              height="50"
+              style={{ display:"flex", justifyContent:"center"}}
               src={require("././images/products/" +
                 product.imageURL.split("/")[4])}
               alt="green iguana"
-              sx={{ padding: "1em 1em 0 1em", objectFit: "contain" }}
+              sx={{ padding: "1em 1em 1em 1em",width:"auto", objectFit: "contain" }}
             />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+            <CardContent    style={{ display:"flex", justifyContent:"center"}}>
+              <Typography gutterBottom variant="h8" component="div">
                 {product.name}
               </Typography>
             </CardContent>
-            <CardActions>
-              <Button size="small">Share</Button>
-              <Button size="small">Learn More</Button>
+            <CardActions    style={{ display:"flex", justifyContent:"center"}}>
+             
+              <Button  size="small">Dodaj</Button>
             </CardActions>
           </Card>
         );
