@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+	<title/>
+	<g data-name="09-alcohol gel" id="_09-alcohol_gel">
+		<rect height="36" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" width="18" x="1" y="27"/>
+		<rect height="9" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" width="12" x="4" y="18"/>
+		<line style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" x1="9" x2="16" y1="22" y2="22"/>
+		<line style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" x1="4" x2="7" y1="22" y2="22"/>
+		<line style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" x1="1" x2="19" y1="34" y2="34"/>
+		<line style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" x1="1" x2="19" y1="56" y2="56"/>
+		<polygon points="15 43 12 43 12 40 8 40 8 43 5 43 5 47 8 47 8 50 12 50 12 47 15 47 15 43" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px"/>
+		<rect height="13" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" width="16" x="26" y="50"/>
+		<path d="M27,55h6.5A1.5,1.5,0,0,1,35,56.5h0A1.5,1.5,0,0,1,33.5,58H27" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px"/>
+		<polygon points="22 1 46 1 42 50 26 50 22 1" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px"/>
+		<path d="M63,63H49V25a2,2,0,0,1,2-2H61a2,2,0,0,1,2,2Z" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px"/>
+		<rect height="4" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" width="10" x="51" y="19"/>
+		<circle cx="34" cy="13" r="8" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px"/>
+		<polygon points="38 11 36 11 36 9 32 9 32 11 30 11 30 15 32 15 32 17 36 17 36 15 38 15 38 11" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px"/>
+		<line style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" x1="54" x2="54" y1="19" y2="23"/>
+		<line style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" x1="58" x2="58" y1="19" y2="23"/>
+		<polygon points="60 19 52 19 53 16 59 16 60 19" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px"/>
+		<rect height="5" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" width="4" x="54" y="11"/>
+		<path d="M61,11H53.5A1.5,1.5,0,0,1,52,9.5h0A1.5,1.5,0,0,1,53.5,8H63Z" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px"/>
+		<line style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" x1="49" x2="63" y1="33" y2="33"/>
+		<line style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" x1="49" x2="63" y1="53" y2="53"/>
+		<line style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" x1="58" x2="63" y1="44" y2="44"/>
+		<line style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" x1="55" x2="63" y1="47" y2="47"/>
+		<line style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" x1="55" x2="63" y1="50" y2="50"/>
+		<line style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px" x1="55" x2="57" y1="44" y2="44"/>
+	</g>
+</svg>
