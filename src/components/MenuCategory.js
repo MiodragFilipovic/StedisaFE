@@ -103,9 +103,9 @@ export default function MenuCategory({ category, products, setProducts }) {
         >
           {subcategories.map((subcategory) => {
             return (
-              <div onMouseLeave={handleUnHover}>
+              <div  key={subcategory.id} onMouseLeave={handleUnHover}>
               <MenuSubcategory
-               key={subcategory.id}
+              
                subcategory={subcategory}
                handleClose={handleClose}
                products={products}
